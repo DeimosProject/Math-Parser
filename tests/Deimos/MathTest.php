@@ -15,6 +15,7 @@ class MathTest extends \PHPUnit_Framework_TestCase
     {
         $math = new Math();
         $this->assertEquals($math->evaluate('2 -3 '), -1);
+        $this->assertEquals($math->evaluate('-2 -3 '), -5);
     }
 
     public function testExampleMul()
@@ -45,6 +46,7 @@ class MathTest extends \PHPUnit_Framework_TestCase
     {
         $math = new Math();
         $this->assertEquals($math->evaluate('77777'), 77777);
+        $this->assertEquals($math->evaluate('-77777'), -77777);
     }
 
     public function testExampleParenthesis()
