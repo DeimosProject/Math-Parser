@@ -2,13 +2,8 @@
 
 namespace Deimos\Expressions;
 
-class Power extends \Deimos\Operator
+class Power extends Multiplication
 {
-
-    /**
-     * @var int
-     */
-    protected $precedence = 5;
 
     /**
      * @param \SplStack $stack

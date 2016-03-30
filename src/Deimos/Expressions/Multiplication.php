@@ -2,13 +2,8 @@
 
 namespace Deimos\Expressions;
 
-class Multiplication extends \Deimos\Operator
+class Multiplication extends Division
 {
-
-    /**
-     * @var int
-     */
-    protected $precedence = 5;
 
     /**
      * @param \SplStack $stack

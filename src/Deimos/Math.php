@@ -27,7 +27,7 @@ class Math
      * @param \SplStack $output
      * @param \SplStack $operators
      */
-    protected function parseOperator(Operator $expression, \SplStack &$output, \SplStack &$operators)
+    protected function parseOperator(Operator $expression, \SplStack $output, \SplStack $operators)
     {
 
         while (!$operators->isEmpty()) {
@@ -57,7 +57,7 @@ class Math
      * @param \SplStack $output
      * @param \SplStack $operators
      */
-    protected function parseParenthesis(Parenthesis $expression, \SplStack &$output, \SplStack &$operators)
+    protected function parseParenthesis(Parenthesis $expression, \SplStack $output, \SplStack $operators)
     {
 
         if ($expression->isOpen()) {

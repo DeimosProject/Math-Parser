@@ -2,14 +2,9 @@
 
 namespace Deimos\Expressions;
 
-class Subtraction extends \Deimos\Operator
+class Subtraction extends Addition
 {
     
-    /**
-     * @var int
-     */
-    protected $precedence = 4;
-
     /**
      * @param \SplStack $stack
      * @return mixed
@@ -20,4 +15,5 @@ class Subtraction extends \Deimos\Operator
         $right = $stack->pop()->operate($stack);
         return $right - $left;
     }
+
 }
