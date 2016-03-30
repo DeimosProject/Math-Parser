@@ -57,6 +57,9 @@ abstract class TerminalExpression
             case '^':
                 return new Expressions\Power($storage);
 
+            case '%':
+                return new Expressions\Modulus($storage);
+
             case '(':
             case ')':
                 return new Expressions\Parenthesis($storage);

@@ -160,7 +160,7 @@ class Math
      * @return \SplStack
      * @throws \Exception
      */
-    public function parse($string)
+    protected function parse($string)
     {
 
         $tokens = $this->tokenize($string);
@@ -207,7 +207,7 @@ class Math
      */
     protected function tokenize($string)
     {
-        $parts = preg_split('((\f+|\+|-|\(|\)|\*|\^|/)|\s+)', $string, null, PREG_SPLIT_NO_EMPTY | PREG_SPLIT_DELIM_CAPTURE);
+        $parts = preg_split('((\f+|%|\+|-|\(|\)|\*|\^|/)|\s+)', $string, null, PREG_SPLIT_NO_EMPTY | PREG_SPLIT_DELIM_CAPTURE);
         $parts = array_map('trim', $parts);
         return $parts;
     }
@@ -254,7 +254,7 @@ class Math
 
         if (!empty($token) &&
             !is_numeric($token) &&
-            !in_array($token, array('+', '-', '*', '/', '^'))) {
+            !in_array($token, array('+', '-', '*', '/', '^', '%', ')', '('))) {
 
             return $this->{$token};
         }

@@ -1,6 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 ### Composer template
 composer.phar
+phpunit.phar
 vendor/
 .idea/
 
