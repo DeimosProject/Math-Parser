@@ -1,0 +1,14 @@
+{
+  "name": "deimos/math-parser",
+  "authors": [
+    {
+      "name": "Maxim Babichev",
+      "email": "info@babichev.net"
+    }
+  ],
+  "autoload": {
+    "psr-0": {
+      "": "src/"
+    }
+  }
+}
