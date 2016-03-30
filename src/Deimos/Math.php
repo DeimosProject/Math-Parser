@@ -16,10 +16,16 @@ class Math
      * @param $string
      * @return mixed
      */
-    public function evaluate($string)
+    public function evaluate($string, $variables = array())
     {
+
+        foreach ($variables as $variable => $value) {
+            $this->registerVariable($variable, $value);
+        }
+
         $stack = $this->parse($string);
         return $this->run($stack);
+
     }
     
     /**

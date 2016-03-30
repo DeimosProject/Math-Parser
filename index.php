@@ -6,4 +6,6 @@ $math = new \Deimos\Math();
 
 $math->a = 89;
 
-var_dump($math->evaluate("2+2*2+a"));
+var_dump($math->evaluate("2+2*2+a", array(
+    'a' => -6
+)));
