@@ -17,5 +17,10 @@ class Parenthesis extends \Deimos\TerminalExpression
     {
         return $this->storage === '(';
     }
+    
+    public function operate(\SplStack $stack)
+    {
+        // TODO: Implement operate() method.
+    }
 
 }

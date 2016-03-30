@@ -73,9 +73,7 @@ abstract class TerminalExpression
     /**
      * @param \SplStack $stack
      */
-    public function operate(\SplStack $stack)
-    {
-    }
+    abstract public function operate(\SplStack $stack);
 
     /**
      * @return mixed
