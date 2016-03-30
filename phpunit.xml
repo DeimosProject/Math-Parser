@@ -2,11 +2,6 @@
     <testsuites>
         <testsuite name="unit">
             <directory>./tests</directory>
-            <directory>./vendor/phpixie/cache/tests</directory>
-            <directory>./vendor/phpixie/db/tests</directory>
-            <directory>./vendor/phpixie/email/tests</directory>
-            <directory>./vendor/phpixie/migrate/tests</directory>
-            <directory>./vendor/phpixie/orm/tests</directory>
         </testsuite>
     </testsuites>
 </phpunit>
